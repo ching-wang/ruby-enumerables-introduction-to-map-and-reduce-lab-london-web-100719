@@ -23,5 +23,5 @@ def reduce_to_all_true(source_array)
 end 
 
 def reduce_to_any_true(source_array)
-  return  source_array.reduce(false) {|any_true, item| any_true || item} 
+  return  source_array.reduce(false) {|any_true, item| any_true || item === true} 
 end 
